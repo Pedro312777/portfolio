@@ -84,7 +84,6 @@
                     Desenvolvedor de Software
                 </h2>
 
-                <p class="hero-description">
                     <p class="hero-description">
                         Desenvolvedor formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e desenvolvimento de aplicações web e mobile.
                     </p>
@@ -131,8 +130,8 @@
         </p>
 
         <p>
-            Durante minha formação, desenvolvi projetos utilizando tecnologias como
-            JavaScript, React Native, Expo, HTML e CSS, além de adquirir
+            Durante minha formação, desenvolvi projetos utilizando tecnologias como HTML5, CSS3
+            JavaScript, HTML5 Canvas, React Native e Expo, além de adquirir
             conhecimentos em Git e GitHub.
         </p>
 
@@ -157,7 +156,7 @@
 
             <div class="skill-card">
 
-                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-html5"> </i>
 
                 <h3>HTML5</h3>
             </div>
@@ -242,12 +241,16 @@
 
                     <div class="project-tech">
 
-                        <span>HTML5</span>
-                        <span>CSS3</span>
                         <span>JavaScript</span>
                         <span>HTML5 Canvas</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
 
                     </div>
+
+                    <button class="project-details-btn" onclick="openProjectModal('unicefight')">
+                        Ver detalhes
+                    </button>
 
                     <div class="project-links">
 
@@ -269,33 +272,42 @@
 
             <div class="project-card">
 
-                <img src="assets/images/fruitsystem.png" alt="Projeto FruitSystem">
+                <img src="assets/images/dashboard.png" alt="Projeto FruitSystem">
 
                 <div class="project-content">
 
                     <h3>FruitSystem</h3>
 
                     <p>
-                        Aplicativo mobile de gerenciamento de hortifrúti utilizando React Native e Expo, desenvolvido como projeto de conclusão do curso de Análise e Desenvolvimento de Sistemas.
+                        Sistema de gestão desenvolvido para uma empresa real do setor de HortiFrut chamada Paraiso das Frutas, visando ajudá-la na gestão do seu negócio, o projeto foi desenvolvido como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas. 
                     </p>
 
                     <p class="project-role">
-                        <strong>Meu papel:</strong> Programador Front-End
+                        <strong>Meu papel:</strong> Atuei como programador Front-End usando ferramentas como o React Native, HTML5, CSS3, Java Script e o Expo.
                     </p>
 
                     <div class="project-tech">
 
                         <span>React Native</span>
                         <span>Expo</span>
+                        <span>JavaScript</span>
 
                     </div>
 
+                    <button
+                        class="project-details-btn"
+                        onclick="openProjectModal('fruitsystem')">
+
+                        Ver detalhes
+
+                    </button>
+
                      <div class="project-links">
 
-                        <a href="https://github.com/Pedro312777/FornecedoresParaisodasFrutas" target="_blank">
+                        <p>
                             <i class="fa-brands fa-github"></i>
-                            GitHub
-                        </a>
+                            GitHub: Repositório privado devido a questões de segurança e confidencialidade da empresa que utiliza o sistema.
+                        </p>
 
                     </div>
 
@@ -305,18 +317,18 @@
 
             <div class="project-card">
 
-                <img src="assets/images/buy" alt="Projeto Buy">
+                <img src="assets/images/buy.png" alt="Projeto Buy">
 
                 <div class="project-content">
 
                     <h3>Buy</h3>
 
                     <p>
-                        Plataforma web de compra e venda de produtos desenvolvida com HTML, CSS e JavaScript, criada como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
+                        Plataforma web de compra e venda de produtos desenvolvida como projeto acadêmico do curso de Análise e Desenvolvimento de Sistemas.
                     </p>
 
                     <p class="project-role">
-                        <strong>Meu papel:</strong> Programador Front-End
+                        <strong>Meu papel:</strong> Atuei no desenvolvimento do front-end das páginas de Carrinho, Pedidos e Favoritos, contribuindo para a criação das interfaces e da experiência de navegação dessas funcionalidades.
                     </p>
 
                     <div class="project-tech">
@@ -327,9 +339,13 @@
 
                     </div>
 
+                    <button class="project-details-btn" onclick="openProjectModal('buy')">
+                        Ver detalhes
+                    </button>
+
                      <div class="project-links">
 
-                        <a href="#" target="_blank">
+                        <a href="https://github.com/Pedro312777/BUY" target="_blank">
                             <i class="fa-brands fa-github"></i>
                             GitHub
                         </a>
@@ -537,7 +553,86 @@
 
 </footer>
 
-    <script src="js/script.js"></script>
+    <div class="modal" id="unicefight-modal">
+
+    <div class="modal-content">
+
+        <button class="modal-close" id="close-unicefight">
+            &times;
+        </button>
+
+        <h2 id="modal-title"></h2>
+
+    <div class="modal-gallery">
+
+        <button class="gallery-btn prev" id="prev-image">
+            &#10094;
+        </button>
+
+        <img
+            id="gallery-image"
+            src="assets/images/menu.png"
+            alt="Imagem do projeto UniceFight"
+        >
+
+        <button class="gallery-btn next" id="next-image">
+            &#10095;
+        </button>
+
+    </div>
+
+    <div class="gallery-thumbnails" id="gallery-thumbnails"></div>
+
+        <p class="image-counter">
+            <span id="current-image">1</span> /
+            <span id="total-images"></span>
+        </p>
+
+        <h3>Sobre o projeto</h3>
+
+        <p id="modal-description"></p>
+
+        <div id="development-section">
+
+        <h3>Desenvolvimento</h3>
+
+        <p>
+            Durante o desenvolvimento, foram implementados lógica de movimentação, sistemas de combate, inteligência artificial para os chefes, física básica, colisões, gerenciamento de estados, animações em sprites e mecânicas exclusivas para cada batalha. 
+        </p>
+
+        <p> 
+            O projeto também envolveu balanceamento da dificuldade, documentação, testes e refinamento da experiência do jogador, aplicando conhecimentos de programação, estruturas de dados, lógica, orientação a objetos e desenvolvimento de software adquiridos ao longo da graduação.
+        </p>
+
+        </div>
+
+        <h3>Meu papel</h3>
+
+        <p id="modal-role"></p>
+
+        <h3>Tecnologias</h3>
+
+        <div class="project-tech" id="modal-technologies"></div>
+
+        <div class="modal-links">
+
+            <a id="modal-github" href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                GitHub
+            </a>
+
+            <a id="modal-demo" href="#" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Demo
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 
