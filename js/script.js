@@ -148,7 +148,7 @@ const projects = {
 
         description: `Programa web de gerenciamento de tarefas do dia desenvolvido com HTML5, CSS3 e JavaScript, permitindo criar, editar, excluir e concluir tarefas, com suporte a horários e descrições. O sistema utiliza LocalStorage para persistência dos dados e possui uma interface dinâmica para gerenciamento das tarefas e interação com o formulário.`,
 
-        role: `Projeto desenvolvido com objetivo de aprimorar minhas habilidades em HTML5, CSS3 e JavaScript, colocando em prática conceitos de desenvolvimento web, manipulação do DOM, e armazenamento de dados utilizando LocalStorage, desenvolvendo uma aplicação funcional e responsivo`,
+        role: `Projeto desenvolvido com objetivo de aprimorar minhas habilidades em HTML5, CSS3 e JavaScript, colocando em prática conceitos de desenvolvimento web, manipulação do DOM, e armazenamento de dados utilizando LocalStorage, desenvolvendo uma aplicação funcional e responsiva`,
 
         technologies: [
             "HTML5",
