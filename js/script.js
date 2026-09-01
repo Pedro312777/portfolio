@@ -16,6 +16,8 @@ const totalImages =
 const modalDescription =
     document.getElementById("modal-description");
 
+const modalTitulo = document.getElementById("modal-titulo");
+
 const modalRole =
     document.getElementById("modal-role");
 
@@ -127,6 +129,39 @@ const projects = {
 
         hasDevelopment: false
 
+    },
+
+    listadetarefas: {
+
+        title: "Lista de tarefas",
+
+        images: [
+            "assets/images/listavazia.png",
+            "assets/images/formulario.png",
+            "assets/images/tarefado.png",
+            "assets/images/tarefamd.png",
+            "assets/images/tarefaconcluida.png",
+            "assets/images/editartarefa.png",
+            "assets/images/tarefaeditada.png",
+            "assets/images/formresponsivo.png"
+        ],
+
+        description: `Programa web de gerenciamento de tarefas do dia desenvolvido com HTML5, CSS3 e JavaScript, permitindo criar, editar, excluir e concluir tarefas, com suporte a horários e descrições. O sistema utiliza LocalStorage para persistência dos dados e possui uma interface dinâmica para gerenciamento das tarefas e interação com o formulário.`,
+
+        role: `Projeto desenvolvido com objetivo de aprimorar minhas habilidades em HTML5, CSS3 e JavaScript, colocando em prática conceitos de desenvolvimento web, manipulação do DOM, e armazenamento de dados utilizando LocalStorage, desenvolvendo uma aplicação funcional e responsivo`,
+
+        technologies: [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+
+        github: "https://github.com/Pedro312777/Lista-de-tarefas",
+
+        demo: null,
+
+        hasDevelopment: false
+
     }
 
 };
@@ -153,6 +188,13 @@ function openProjectModal(projectName) {
 
     modalRole.textContent =
         currentProject.role;
+
+    if(projectName === "listadetarefas"){
+        modalTitulo.textContent = "Objetivo do projeto:";
+    }
+    else{
+        modalTitulo.textContent = "Meu Papel:";
+    }
 
     totalImages.textContent =
         images.length;
