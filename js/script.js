@@ -113,7 +113,7 @@ const projects = {
             "assets/images/pedidos.png"
         ],
 
-        description: `O Buy é uma plataforma web de compra e venda de produtos feita para consumidores e comerciantes de uma determinada região. O Buy possibilita aos consumidores encontrar os produtos que desejam em lojas perto da sua casa e comparar os preços antes da  compra, para os comerciantes o Buy possibilita a aportunidade de divulgarem suas lojas e seus produtos. O projeto foi desenvolvido em equipe como projeto acadêmico da matéria "Metologia Ágil Scrum" durante o curso de Análise e Desenvolvimento de Sistemas.`,
+        description: `O Buy é uma plataforma web de compra e venda de produtos feita para consumidores e comerciantes de uma determinada região. O Buy possibilita aos consumidores encontrar os produtos que desejam em lojas perto da sua casa e comparar os preços antes da  compra, já para os comerciantes o Buy possibilita a aportunidade de divulgarem suas lojas e seus produtos. O projeto foi desenvolvido em equipe como projeto acadêmico da matéria "Metologia Ágil Scrum" durante o curso de Análise e Desenvolvimento de Sistemas.`,
 
         role: `Atuei no desenvolvimento do front-end das páginas de Carrinho, Pedidos e Favoritos, contribuindo para a criação das interfaces e da experiência de navegação dessas funcionalidades.`,
 
