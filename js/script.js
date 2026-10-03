@@ -179,9 +179,9 @@ const projects = {
 
         description: `Aplicação web desenvolvida para gerenciamento de produtos, permitindo cadastrar, visualizar, editar e excluir produtos, além de realizar buscas por nome e validar os dados dos formulários.
 
-        O projeto foi desenvolvido com **React e Vite** no Front-End, utilizando **Axios** para comunicação com uma API REST desenvolvida em **Node.js e Express**, com **PostgreSQL** como banco de dados. A aplicação também conta com validações, tratamento de erros, mensagens de feedback ao usuário e interface responsiva.`,
+        O projeto foi desenvolvido com React e Vite no Front-End, utilizando Axios para comunicação com uma API REST desenvolvida em Node.js e Express, com PostgreSQL como banco de dados. A aplicação também conta com validações, tratamento de erros, mensagens de feedback ao usuário e interface responsiva.`,
 
-        role: `Este projeto foi desenvolvido para praticar o desenvolvimento de uma aplicação web completa, integrando **Front-End, Back-End e banco de dados**. Durante o desenvolvimento, foram aplicados conceitos de **React, Node.js, Express, Axios, PostgreSQL, APIs REST, CRUD, validação de dados e tratamento de erros**, aprofundando os conhecimentos nessas tecnologias.`,
+        role: `Este projeto foi desenvolvido para praticar o desenvolvimento de uma aplicação web completa, integrando Front-End, Back-End e banco de dados. Durante o desenvolvimento, foram aplicados conceitos de React, Node.js, Express, Axios, PostgreSQL, APIs REST, CRUD, validação de dados e tratamento de erros, aprofundando os conhecimentos nessas tecnologias.`,
 
         technologies: [
             "React",
