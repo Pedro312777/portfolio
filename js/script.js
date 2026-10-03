@@ -162,6 +162,43 @@ const projects = {
 
         hasDevelopment: false
 
+    },
+
+    lojadeprodutos: {
+
+        title: "Loja de produtos",
+
+        images: [
+            "assets/images/cadprod.png",
+            "assets/images/prodsalvo.png",
+            "assets/images/cardprod.png",
+            "assets/images/erronome.png",
+            "assets/images/erropreco.png",
+            "assets/images/errocat.png"
+        ],
+
+        description: `Aplicação web desenvolvida para gerenciamento de produtos, permitindo cadastrar, visualizar, editar e excluir produtos, além de realizar buscas por nome e validar os dados dos formulários.
+
+        O projeto foi desenvolvido com **React e Vite** no Front-End, utilizando **Axios** para comunicação com uma API REST desenvolvida em **Node.js e Express**, com **PostgreSQL** como banco de dados. A aplicação também conta com validações, tratamento de erros, mensagens de feedback ao usuário e interface responsiva.`,
+
+        role: `Este projeto foi desenvolvido para praticar o desenvolvimento de uma aplicação web completa, integrando **Front-End, Back-End e banco de dados**. Durante o desenvolvimento, foram aplicados conceitos de **React, Node.js, Express, Axios, PostgreSQL, APIs REST, CRUD, validação de dados e tratamento de erros**, aprofundando os conhecimentos nessas tecnologias.`,
+
+        technologies: [
+            "React",
+            "Vite",
+            "JavaScript",
+            "Axios",
+            "Node.js",
+            "Express",
+            "PostgreSQL"
+        ],
+
+        github: "https://github.com/Pedro312777/frontend-produtos",
+
+        demo: null,
+
+        hasDevelopment: false
+
     }
 
 };
@@ -189,7 +226,7 @@ function openProjectModal(projectName) {
     modalRole.textContent =
         currentProject.role;
 
-    if(projectName === "listadetarefas"){
+    if(projectName === "listadetarefas" || "lojadeprodutos"){
         modalTitulo.textContent = "Objetivo do projeto:";
     }
     else{
